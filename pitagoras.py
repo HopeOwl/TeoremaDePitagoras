@@ -7,7 +7,7 @@ def conta():
                 cateto2 = int(input('Informe o valor do segundo cateto:\n'))
                 print(f'O valor da hipotenusa é de: {((cateto1 ** 2) + (cateto2 ** 2)) ** 0.5}')
             except Exception:
-                print('Valor incorreto!(Somente números inteiros)')
+                print('Valor inválido!(Somente números inteiros)')
                 conta2()
         conta2()
     elif resposta == 'não':
@@ -17,7 +17,7 @@ def conta():
                 hipotenusa = int(input('Informe o valor da hipotenusa:\n'))
                 print(f'O valor do cateto é de: {((hipotenusa ** 2) - (cateto1 ** 2)) ** 0.5}')
             except Exception:
-                print('Valor incorreto!(Somente números inteiros)')
+                print('Valor inválido!(Somente números inteiros)')
                 conta3()
         conta3()
     else:
